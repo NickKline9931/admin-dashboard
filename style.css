@@ -3,7 +3,7 @@
     width: 100vw;
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 13fr 20fr 20fr 15fr;
+    grid-template-columns: 13fr 20fr 20fr 12fr;
     position: relative;
     margin: 0;
     white-space: nowrap;
@@ -75,12 +75,15 @@ form > button {
 }
 
 #main {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     background-color: #fefce8;
     display: grid;
     grid-template-rows: 1fr 3fr 3fr;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #yourprojects {
@@ -108,7 +111,12 @@ form > button {
     grid-column: 2 / 3;
 }
 
-#main > div
+#main > div {
+    border: 4px solid #eab308;
+    border-radius: 9px;
+    padding-left: 2rem;
+    background-color: white;
+}
 
 #right {
     grid-row: 2 / 3;
